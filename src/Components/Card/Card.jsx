@@ -5,12 +5,9 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import { ButtonGroup, Container } from "@mui/material";
+import { Container } from "@mui/material";
 import "./Card.css";
 import '../../Fonts/Montserrat-Black.ttf'
-import shadows from "@mui/material/styles/shadows";
-import { FormatStrikethrough } from "@mui/icons-material";
-
 export default function ImgMediaCard() {
   return (
     <>
@@ -44,7 +41,7 @@ export default function ImgMediaCard() {
             <Typography variant color="black" fontFamily={'Fraunces'} fontWeight={600} fontSize={30}>
               Gabrielle Essence <br></br>Eau De Parfum <br></br>
               </Typography>
-              <Typography color="GrayText"fontFamily={'Arial'}> A floral, solar and voluptuous interpretation composed by
+              <Typography color="GrayText" fontFamily={'Arial'} fontSize={14}> A floral, solar and voluptuous interpretation composed by
               Olivier Polge, Perfumer-Creator for the House of CHANEL. <br></br>
               </Typography>
               <br></br>
