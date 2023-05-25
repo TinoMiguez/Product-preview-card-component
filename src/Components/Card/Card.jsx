@@ -7,60 +7,64 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { ButtonGroup, Container } from "@mui/material";
 import "./Card.css";
-//import '../../Fonts/Montserrat'
+import '../../Fonts/Montserrat-Black.ttf'
+import shadows from "@mui/material/styles/shadows";
 
 export default function ImgMediaCard() {
   return (
     <>
       <Container
         sx={{
-          backgroundColor: "hsl(30, 38%, 92%)",
+          justifyContent: "center",
+          display: "flex",
+          marginTop: 5
         }}
       >
+
         <Card
           sx={{
             display: "flex",
             flexWrap: "wrap",
-            justifyContent: "space-evenly",
-            height: "100%",
-            marginTop: 10,
+            margin: '0 auto',
             maxWidth: 345,
             borderRadius: 2,
+            justifyContent: "center"
           }}
         >
-          <CardMedia
+           <CardMedia
             component="img"
             width="1440px"
             image="./src/assets/image-product-mobile.jpg"
           />
-          <CardContent>
-            <Typography gutterBottom variant="h" component="div">
-              PERFUME
+          <CardContent >
+            <Typography gutterBottom component="div" fontFamily={'Montserrat'} color={"gray"}>
+              P E R F U M E
             </Typography>
-            <Typography variant="body2" color="text.secondary">
+            <Typography variant color="black" fontFamily={'Fraunces'} fontWeight={600} fontSize={30}>
               Gabrielle Essence <br></br>Eau De Parfum <br></br>
-              <br></br>A floral, solar and voluptuous interpretation composed by
+              </Typography>
+              <Typography color="GrayText"fontFamily={'Arial'}> A floral, solar and voluptuous interpretation composed by
               Olivier Polge, Perfumer-Creator for the House of CHANEL. <br></br>
-              <br></br>$149.99 $169.99 Challenge by Frontend Mentor. <br></br>
+              </Typography>
+              <br></br>
+              <Typography color="darkgreen" fontFamily={'Fraunces'} fontWeight={600} fontSize={30}>$149.99</Typography>
+              <Typography>
+               $169.99 <br></br>Challenge by Frontend Mentor.
               <br></br>Coded by Constantino Míguez Martel.
             </Typography>
           </CardContent>
           <CardActions>
-            <ButtonGroup
-              variant="contained"
-              aria-label="outlined primary button"
-            >
               <Button
                 sx={{
-                  alignItems: "center",
+                  width: 300,
                   fontSize: "small",
-                  fontFamily: "Montserrat sans-serif",
+                  fontFamily: "montserrat",
                   backgroundColor: "darkgreen",
+                  color: "white"
                 }}
               >
                 Add to Cart
               </Button>
-            </ButtonGroup>
           </CardActions>
         </Card>
       </Container>
