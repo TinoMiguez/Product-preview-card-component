@@ -9,6 +9,7 @@ import { ButtonGroup, Container } from "@mui/material";
 import "./Card.css";
 import '../../Fonts/Montserrat-Black.ttf'
 import shadows from "@mui/material/styles/shadows";
+import { FormatStrikethrough } from "@mui/icons-material";
 
 export default function ImgMediaCard() {
   return (
@@ -37,8 +38,8 @@ export default function ImgMediaCard() {
             image="./src/assets/image-product-mobile.jpg"
           />
           <CardContent >
-            <Typography gutterBottom component="div" fontFamily={'Montserrat'} color={"gray"}>
-              P E R F U M E
+            <Typography gutterBottom component="div" fontFamily={'Montserrat'} color={"gray"} letterSpacing={5}>
+              PERFUME
             </Typography>
             <Typography variant color="black" fontFamily={'Fraunces'} fontWeight={600} fontSize={30}>
               Gabrielle Essence <br></br>Eau De Parfum <br></br>
@@ -47,11 +48,12 @@ export default function ImgMediaCard() {
               Olivier Polge, Perfumer-Creator for the House of CHANEL. <br></br>
               </Typography>
               <br></br>
-              <Typography color="darkgreen" fontFamily={'Fraunces'} fontWeight={600} fontSize={30}>$149.99</Typography>
-              <Typography>
-               $169.99 <br></br>Challenge by Frontend Mentor.
+              <Typography color="darkgreen" fontFamily={'Fraunces'} fontWeight={600} fontSize={30} position= "absolute">$149.99</Typography>
+              <Typography sx={{color: "grey", textDecorationLine: "line-through", position: "relative", marginTop: 1.5, marginLeft: "150px", marginBottom: 2}}>$169.99</Typography>
+              <Typography sx={{fontSize:10, color: "grey"}}>
+              Challenge by Frontend Mentor.
               <br></br>Coded by Constantino Míguez Martel.
-            </Typography>
+                </Typography>
           </CardContent>
           <CardActions>
               <Button
