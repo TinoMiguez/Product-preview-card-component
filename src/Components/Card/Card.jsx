@@ -47,10 +47,7 @@ export default function ImgMediaCard() {
               <br></br>
               <Typography color="darkgreen" fontFamily={'Fraunces'} fontWeight={600} fontSize={30} position= "absolute">$149.99</Typography>
               <Typography sx={{color: "grey", textDecorationLine: "line-through", position: "relative", marginTop: 1.5, marginLeft: "150px", marginBottom: 2}}>$169.99</Typography>
-              <Typography sx={{fontSize:10, color: "grey"}}>
-              Challenge by Frontend Mentor.
-              <br></br>Coded by Constantino Míguez Martel.
-                </Typography>
+              
           </CardContent>
           <CardActions>
               <Button 
@@ -66,7 +63,12 @@ export default function ImgMediaCard() {
               </Button>
           </CardActions>
         </Card>
+        
       </Container>
+      <Typography sx={{fontSize:10, color: "grey", justifyItems:"center"}}>
+              Challenge by Frontend Mentor.
+              <br></br>Coded by Constantino Míguez Martel.
+                </Typography>
     </>
   );
 }
