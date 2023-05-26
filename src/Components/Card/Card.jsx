@@ -17,7 +17,7 @@ export default function ImgMediaCard() {
         sx={{
           justifyContent: "center",
           display: "flex",
-          marginTop: 5
+          marginTop: 8
         }}
       >
 
